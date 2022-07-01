@@ -6,7 +6,7 @@
  * main - Prints if number is positive ,zero if negative
  * Return : Always (success)
  */
-int main(void)
+int main (void)
 {
 	int n;
 
