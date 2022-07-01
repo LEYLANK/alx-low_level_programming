@@ -3,4 +3,5 @@ The last digit > This program will assign a random number to the variable n each
 I sometimes suffer from insomnia > Write a program that prints the alphabet in lowercase, followed by a new line.
 alphABET > Write a program that prints the alphabet in lowercase, and then in uppercase, followed by a new line
 When I was having that alphabet soup, > Write a program that prints the alphabet in lowercase, followed by a new line 
- Numbers > Write a program that prints all single digit numbers of base 10 starting from 0, followed by a new line.
+ Numbers > Write a program that prints all single digit numbers of base 10 starting from 0, followed by a new line .
+
