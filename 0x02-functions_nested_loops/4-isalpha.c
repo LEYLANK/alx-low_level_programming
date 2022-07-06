@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-  * _isalpha - a function that checks for alphabetical order 
+  * _isalpha - a function that checks for alphabetical order
   * @c: single letter input
   * Return: 1 if c is a letter (lower or uppercase), 0 otherwise
   */
@@ -11,4 +11,3 @@ int _isalpha(int c)
 	else 
 		return (0);
 }
-
