@@ -1,26 +1,23 @@
 #include"main.h"
 /**
-  * print_sign - Entry point
-  *
-  * @n: n is the variable for the program.
-  * Return: Always 0 (Success)
+  * more_numbers -  checks for checks for a digit (0 through 9).
+  * Return: Always 0.
   */
-int print_sign(int n)
+void more_numbers(void)
 {
-	if (n > 0)
+	int a, b;
+
+	for (a = 0; a < 10; a++)
 	{
-		_putchar('+');
-		return (1);
-	}
-	else if (n == 0)
-	{
-		_putchar('0');
-		return (0);
-	}
-	else
-	{
-		_putchar('-');
-		return (-1);
+		for (b = 0; b < 15; b++)
+		{
+			if (b / 10 != 0)
+			{
+				_putchar(b / 10 + '0');
+			}
+			_putchar(b % 10 + '0');
+		}
+		_putchar('\n');
 	}
 }
 
