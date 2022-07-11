@@ -2,10 +2,11 @@
 
 
 /**
- * _puts - Write a function that prints a string, followed by a new line, to
- * stdout.
+ * _puts - Write a function that prints a string.
  *
  * @str: This is my input string
+ *
+ * Return: string
  *
  */
 
