@@ -1,10 +1,13 @@
 #include <stdio.h>
+
 /**
  * main - main func
  * Description: more of the last
  * Return: 0
  */
+
 int main(void)
+
 {
 	int digit1, digit2, digit3;
 
