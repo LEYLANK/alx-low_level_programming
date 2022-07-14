@@ -2,15 +2,32 @@
 #include "main.h"
 
 /**
- *  _strcpy - copies strings
- *  @dest: first para
- *  @src: second para
- *  Return: 0
+ *  print_array - prints n elements of an array of ints
+ *  @a: func para
+ *  @n: func para
+ *  Return: void
  */
 
-char *_strcpy(char *dest, char *src)
+void print_array(int *a, int n)
 {
-	strcpy(dest, src);
+	int count;
 
-	return (dest);
+	if (n <= 0)
+	{
+		printf("\n");
+	}
+	else
+	{
+		for (count = 1; count <= n; count++)
+		{
+			if (count == n)
+			{
+				printf("%d\n", a[count - 1]);
+			}
+			else
+			{
+				printf("%d, ", a[count - 1]);
+			}
+		}
+	}
 }
