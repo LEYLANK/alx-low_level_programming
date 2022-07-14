@@ -6,23 +6,18 @@
 
 void print_most_numbers(void)
 {
-	int var = 0;
+	int n;
 
-	do
+	for (n = 0; n <= 9; n++)
 	{
-		if (var == 4 || var == 2)
+		if (n == 2 || n == 4)
 		{
-			var++;
 			continue;
 		}
 		else
 		{
-			_putchar(var + '0');
-			var++;
+			_putchar((n % 10) + '0');
 		}
-		while (var < 10);
-
-		_putchar('\n');
 	}
+	_putchar('\n');
 }
-
