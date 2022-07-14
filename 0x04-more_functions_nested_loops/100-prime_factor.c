@@ -1,34 +1,28 @@
-#include "main.h"
+#include <stdio.h>
 /**
- * print_triangle - prints triangle
- * @size: numbers of triangle to print
+ * main - prints prime factors
  * Return: 0
  */
 
-void print_triangle(int size)
+int main(void)
 {
-	int row, columns, hash;
+	long int number = 612852475143, largest = 0, i = 2;
 
-	if (size <= 0)
+	while (number != 1)
 	{
-		_putchar('\n');
-	}
-	else
-	{
-		for (row = 1; row <= size; row++)
+		if (number % i == 0)
 		{
-			for (columns = 1; columns <= size - row; columns++)
+			while (number % i == 0)
 			{
-				_putchar(' ');
+				number /= i;
 			}
-			for (hash = 1; hash <= row; hash++)
-			{
-				_putchar('#');
-			}
-			if (row == size)
-				continue;
-			_putchar('\n');
+			largest = i;
+
 		}
-		_putchar('\n');
+		i++;
 	}
+	printf("%ld", largest);
+	printf("\n");
+
+	return (0);
 }
