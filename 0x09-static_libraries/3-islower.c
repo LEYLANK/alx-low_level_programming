@@ -1,14 +1,22 @@
 #include "main.h"
+#include <ctype.h>
 
 /**
- * _islower - prints 1 or 0 depending on input
- * @c: first parameter
+ * _islower - islower func
+ * @c: character to print
  *
- * Description: prints all lowercase letters
- * Return: Always(0).
+ * Description: print something
+ * Return: 0 or 1
  */
 
 int _islower(int c)
 {
-	return (c >= 'a' && c <= 'z');
+	if (islower(c))
+	{
+		return (1);
+	}
+	else 
+	{
+		return(0);
+	}
 }

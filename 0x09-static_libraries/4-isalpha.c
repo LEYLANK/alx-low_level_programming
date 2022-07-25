@@ -1,16 +1,25 @@
 #include "main.h"
+#include <ctype.h>
 
 /**
- *  _isalpha - Check if character is a alphabet character.
- *  @c: type int character
- *  Return: 1 if letter, lowercase or uppercase, and 0 otherwise
+ *  _isalpha - func
+ *  @c: print
+ *  Description : print
+ *  Return: 0 
  */
 
 int _isalpha(int c)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-		return (1);
-
+	if (islower(c) || isupper(c) || (c <= 'a' && c >= 'z'))
+	{
+		return(1);
+	}
+	else if (c <= 'A' && c >= 'Z')
+	{
+		return(1);
+	}
 	else
-		return (0);
+	{
+		return(0);
+	}
 }
