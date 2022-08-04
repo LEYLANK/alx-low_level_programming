@@ -29,7 +29,7 @@ void integer(va_list arg)
  */
 void real(va_list arg)
 {
-	int num;
+	float num;
 
 	num = va_arg(arg, double);
 	printf("%f", num);
