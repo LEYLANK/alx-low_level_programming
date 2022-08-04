@@ -5,7 +5,6 @@
  * character - prints char
  * @arg: argument
  */
-
 void character(va_list arg)
 {
 	char letter;
