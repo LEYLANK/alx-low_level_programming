@@ -24,7 +24,7 @@ void integer(va_list arg)
 	printf("%d", num);
 }
 /**
- * integer - prints int
+ * real - prints float
  * @arg: argument
  */
 void real(va_list arg)
