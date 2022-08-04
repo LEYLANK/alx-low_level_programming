@@ -1,4 +1,5 @@
 #include "variadic_functions.h"
+#include <stdio.h>
 
 /**
  * character - prints char
@@ -26,7 +27,7 @@ void integer(va_list arg)
  * integer - prints int
  * @arg: argument
  */
-void integer(va_list arg)
+void real(va_list arg)
 {
 	int num;
 
