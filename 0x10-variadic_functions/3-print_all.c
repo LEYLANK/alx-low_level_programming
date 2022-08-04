@@ -20,6 +20,17 @@ void integer(va_list arg)
 {
 	int num;
 
+	num = va_arg(arg, int);
+	printf("%d", num);
+}
+/**
+ * integer - prints int
+ * @arg: argument
+ */
+void integer(va_list arg)
+{
+	int num;
+
 	num = va_arg(arg, double);
 	printf("%f", num);
 }
