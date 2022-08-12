@@ -21,7 +21,6 @@ list_t *add_node_end(list_t **head, const char *str)
 		free(new);
 		return (NULL);
 	}
-	
 	for (length = 0; str[length];)
 		length++;
 	new->str = duplicate;
@@ -39,4 +38,3 @@ list_t *add_node_end(list_t **head, const char *str)
 	}
 	return (*head);
 }
-	
